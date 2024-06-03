@@ -16,16 +16,16 @@ enum LogLevel {
     }
 
     static LogLevel parseLevel(String str) {
-        if (str.equals("e") || str.equals("error")) {
+        if ("e".equals(str) || "error".equals(str)) {
             return LOG_LEVEL_ERROR;
         }
-        if (str.equals("w") || str.equals("warn")) {
+        if ("w".equals(str) || "warn".equals(str)) {
             return LOG_LEVEL_WARN;
         }
-        if (str.equals("i") || str.equals("info")) {
+        if ("i".equals(str) || "info".equals(str)) {
             return LOG_LEVEL_INFO;
         }
-        if (str.equals("d") || str.equals("debug")) {
+        if ("d".equals(str) || "debug".equals(str)) {
             return LOG_LEVEL_DEBUG;
         }
         return LOG_LEVEL_VERBOSE;

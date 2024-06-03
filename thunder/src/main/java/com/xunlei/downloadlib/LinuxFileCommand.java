@@ -95,7 +95,7 @@ public class LinuxFileCommand {
 	}
 	
 	public final Process ls_Directory(String directory) throws IOException{
-		if (directory.equals("/"))
+		if ("/".equals(directory))
 			directory = "";
 		String[] cmds = {"ls", "-a", directory};
 		return shell.exec(cmds);
